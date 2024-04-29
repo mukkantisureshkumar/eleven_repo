@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>TABLE:- Webpage</h1>
+        <table border="3px">
+            <thead >
+                <tr>
+                    <th>id</th>
+                    <th>topic_name</th>
+                    <th>name</th>
+                    <th>url</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for to in wlto %}
+                <tr>
+                    <td>{{to.id}}</td>
+                    <td>{{to.topic_name}}</td>
+                    <td>{{to.name}}</td>
+                    <td>{{to.url}}</td>
+                    <td>{{to.email}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
