@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>TABLE:- AccessRecord</h1>
+        <table border="3px">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>date</th>
+                    <th>author</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ob in key %}
+                <tr>
+                    <td>{{ob.id}}</td>
+                    <td>{{ob.name}}</td>
+                    <td>{{ob.date}}</td>
+                    <td>{{ob.author}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+    </center>
+</body>
+</html>
